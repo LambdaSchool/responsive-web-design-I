@@ -1,3 +1,128 @@
-/* Use your own code or past solution for Great Idea Web Page CSS here! */
+
+/* Your code starts here! */
+
+.nav-container section {
+	margin-top: 70px;
+	padding-bottom: 70px;
+	border-bottom: 1px solid black;
+	display: flex;
+	justify-content: space-between;
+}
+
+.get-started {
+	display: flex;
+	flex-grow: 1;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.get-started h1 {
+	font-size: 65px;
+	margin-bottom: 15px;
+}
+
+.get-started button {
+	background: none;
+	border: 1px solid black;
+	width: 134px;
+	height: 28px;
+  box-shadow: 0px 5px 10px 0px rgba(0,0,0,0);
+  transition: all linear 200ms;
+}
+
+.get-started button:hover {
+	background-color: dodgerblue;
+  transform: scale(1.3);
+  box-shadow: 0 5px 10px 0px rgba(0,0,0,0.35);
+}
+
+.container {
+	border-bottom: 1px solid black;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.container h2 {
+	font-size: 20px;
+}
+
+.container .top {
+	 width: 50%;
+	 margin: 40px 0;
+ }
+
+.container .bottom {
+	 width: 33%;
+	 margin: 40px 0;
+ }
+
+.contact {
+	 margin: 40px 0;
+ }
+
+.contact p {
+	 margin: 20px 0;
+ }
 
 
+@media (max-width: 800px) {
+  .nav-container section {
+    margin-top: 120px;
+    height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .get-started {
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-container section img {
+    display: none;
+  }
+
+  .container .top {
+    width: 48%;
+    padding: 0 10px;
+  }
+
+  .container img {
+    width: 100%;
+  }
+
+  .container .bottom {
+    width: 32%;
+    padding: 0 10px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .nav-container section {
+    margin: 0;
+    padding: 0;
+    height: 350px;
+  }
+
+  .get-started {
+    width: 265px;
+    padding-top: 40px;
+  }
+
+  .container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .top,
+  .container .bottom {
+    width: 100%;
+  }
+
+  .container img {
+    width: 100%;
+  }
+}
